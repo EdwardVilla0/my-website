@@ -1,29 +1,68 @@
 <section class="hero is-primary is-bold">
   <div class="hero-body">
     <div class="container">
-      <h1 class="title">contact me!</h1>
+      <h1 class="title">Contact me</h1>
     </div>
   </div>
 </section>
 <section class="section">
   <div class="container">
-    <form> 
+
+    <!-- CONTACT FORM--> 
+    <form (ngSubmit)="submitForm()" #contactForm="ngForm">
+      <!--contact name-->
       <div class="field">
         <label>Name</label>
         <br />
-        <input type="text" name="name" class="input" [(ngModel)]="name"/>
+        <input
+               type="text"
+               name="name"
+               class="input"
+               [(ngModel)]="name"
+               #nameInput="ngModel"
+               required/>
+
+        <div class="help is-error" *ngIf ="nameInput.invalid && nameInput.touched">
+          Your name is required
+        </div>
       </div>
+      <!--contact email-->
       <div class="field">
         <label>Email</label>
         <br />
-        <input type="email" name="email" class="input" [(ngModel)]="email"/>
+        <input
+               type="email"
+               name="email"
+               class="input"
+               [(ngModel)]="email"
+               #emailInput="ngModel"
+               required
+               email/>
+
+        <div class="help is-error" *ngIf="emailInput.invalid && emailInput.touched">
+          Your valid email is required
+        </div>
       </div>
+      <!--contact message-->
       <div class="field">
         <label>Message</label>
         <br />
-        <textarea name="message" class="textarea" [(ngModel)]="message"></textarea>
+        <textarea
+                  name="message"
+                  class="textarea"
+                  [(ngModel)]="message"
+                  #messageInput="ngModel"
+                  required></textarea>
+        <div class="help is-error" *ngIf="messageInput.invalid && messageInput.dirty">
+          Message can not be blank.
+        </div>
       </div>
-      <button type="submit" class="btn btn-primary" (click)="submitForm()">Send</button>
+
+      <button
+              type="submit"
+              class="btn btn-primary"
+              [disabled]="contactForm.invalid">Send</button>
     </form>
+
   </div>
 </section>
