@@ -1,13 +1,35 @@
+.fa {
+  color: #000000;
+  font-size: 25px;
+  line-height: 50px;
+  transition: .5s;
+  position: relative;
+  float: right;
+  margin-left: 4%;
+}
+/*--------------------------------------------------------------------------------------------------------------*/
 
-.carousel-inner img {
-  width: 100%; /* Set width to 100% */
-  margin: auto;
-  min-height: 200px;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: url(../../assets/img/background.jpg);
 }
 
-/* Hide the carousel text when the screen is less than 600 pixels wide */
-@media (max-width: 600px) {
-  .carousel-caption {
-    display: none;
-  }
+section{
+    padding: 0 100px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.box {
+  border-radius: 35px;
+  position: relative;
+  max-width: 600px;
+  padding: 50px;
+  background: rgba(255,255,255,.5);
+  box-shadow: 0 5px 15px rgba(0,0,0,.5);
 }
