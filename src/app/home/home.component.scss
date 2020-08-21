@@ -14,8 +14,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  /*background: url(../../assets/img/background.jpg);*/
+  background: url(../../assets/img/background.jpg);
   background-color: rgb(204, 214, 246);
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1);
 }
 
 section{
