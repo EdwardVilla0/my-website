@@ -1,3 +1,4 @@
+/*icon*/
 .fa {
   color: #000000;
   font-size: 25px;
@@ -13,7 +14,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: url(../../assets/img/background.jpg);
+  /*background: url(../../assets/img/background.jpg);*/
+  background-color: rgb(204, 214, 246);
 }
 
 section{
@@ -33,3 +35,12 @@ section{
   background: rgba(255,255,255,.5);
   box-shadow: 0 5px 15px rgba(0,0,0,.5);
 }
+
+.h2{
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    
+}
+
+/*---------------------------------------------------------------------------------------------------------------------*/
