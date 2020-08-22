@@ -17,16 +17,25 @@
   <div>
     <span (click)="showModal()">
       <i class="fa fa-image"></i>
-      
-    </span>
-    
+      <div *ngIf="modal" [@fadeInOnEnter] >
 
-    <section>
-      <div class="box">
-        <h2>Hi, my name is Eduardo</h2>
       </div>
-    </section>
 
+    </span>
+    <div *ngIf="modal" [@enter]>
+      <section>
+        <div class="box">
+          <h2>Hi, my name is Eduardo</h2>
+        </div>
+      </section>
+    </div>
+
+
+    <!--<section>
+    <div class="box">
+      <h2>Hi, my name is Eduardo</h2>
+    </div>
+  </section>-->
     <!------------------------------------------------------------------------------------------------------------->
 
 

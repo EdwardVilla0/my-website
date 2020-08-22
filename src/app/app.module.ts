@@ -12,6 +12,18 @@ import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatTableModule } from '@angular/material/table';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSelectModule } from '@angular/material/select';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+
+
 
 @NgModule({
   declarations: [
@@ -20,14 +32,24 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     FooterComponent,
     AboutComponent,
     ContactComponent,
-    HomeComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
-    PdfViewerModule
+    PdfViewerModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatInputModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
+    MatDialogModule,
+    MatTableModule
   ],
   providers: [
 
