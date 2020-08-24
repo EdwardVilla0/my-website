@@ -1,49 +1,28 @@
+
 /*icon*/
 .fa {
   color: #000000;
   font-size: 25px;
-  line-height: 50px;
   transition: .5s;
   position: relative;
   float: right;
   margin-left: 4%;
 }
-/*--------------------------------------------------------------------------------------------------------------*/
 
+.box {
+  
+  color: white;
+  font-size: 70px;
+}
 body {
-  margin: 0;
-  padding: 0;
   font-family: sans-serif;
   background: url(../../assets/img/background.jpg);
   background-color: rgb(204, 214, 246);
   filter: gray; /* IE6-9 */
   -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
   filter: grayscale(1);
-}
-
-section{
-    padding: 0 100px;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.box {
-  border-radius: 35px;
   position: relative;
-  max-width: 600px;
-  padding: 50px;
-  background: rgba(255,255,255,.5);
-  box-shadow: 0 5px 15px rgba(0,0,0,.5);
 }
 
-.h2{
-    display: block;
-    font-size: 1.5em;
-    font-weight: bold;
-    
-}
 
 /*---------------------------------------------------------------------------------------------------------------------*/

@@ -6,41 +6,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 
 <body>
-
-
-  <div>
-    <span (click)="showModal()">
-      <i class="fa fa-image"></i>
-      <div *ngIf="modal" [@fadeInOnEnter] >
-
-      </div>
-
-    </span>
+  <span (click)="showModal()">
+    <i class="fa fa-image"></i>
+  </span>
+  <div class="intro">
     <div *ngIf="modal" [@enter]>
-      <section>
-        <div class="box">
-          <h2>Hi, my name is Eduardo</h2>
-        </div>
-      </section>
+      <div class="box">
+        Building digital brands,
+      </div>
     </div>
-
-
-    <!--<section>
-    <div class="box">
-      <h2>Hi, my name is Eduardo</h2>
+    <div *ngIf="modal2" [@enter2]>
+      <div class="box">
+        To be proud of.
+      </div>
     </div>
-  </section>-->
-    <!------------------------------------------------------------------------------------------------------------->
-
-
-
-
   </div>
+  
+
+
+
 </body>
 </html>
