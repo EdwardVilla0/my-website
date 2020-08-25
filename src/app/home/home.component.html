@@ -17,9 +17,13 @@
 
 
 <body>
+  <!--show pic icon-->
   <span (click)="showModal()">
     <i class="fa fa-image"></i>
   </span>
+  <!--picture displayed-->
+  <app-alert *ngIf="picModal" (close)="onHandleAlert()"></app-alert>
+  <!--welcome text-->
   <div class="intro">
     <div *ngIf="modal" [@enter]>
       <div class="box">

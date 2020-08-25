@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import {
   fadeInOnEnterAnimation, fadeInUpOnEnterAnimation
 } from 'angular-animations';
@@ -16,8 +16,10 @@ import {
 
 export class HomeComponent implements OnInit {
 
+  picModal = false;
   modal = false;
   modal2 = false;
+  @Output() close = new EventEmitter<void>()
 
   constructor() {
   }
@@ -28,6 +30,10 @@ export class HomeComponent implements OnInit {
   }
 
   showModal() {
-    console.log('testing');
+    this.picModal = true;
   }
+  onHandleAlert() {
+    this.picModal = false;
+  }
+
 }
