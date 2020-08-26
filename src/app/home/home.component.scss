@@ -2,9 +2,9 @@ body {
   font-family: sans-serif;
   background: url(../../assets/img/background.jpg);
   background-color: rgb(204, 214, 246);
-  filter: gray; /* IE6-9 */
+  //filter: gray; /* IE6-9 */
   -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
-  filter: grayscale(1);
+  //filter: grayscale(1);
   position: relative;
 }
 
@@ -24,6 +24,17 @@ body {
 .box2 {
   color: white;
   font-size: 70px;
+}
+
+#picDescription{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+#pic1 {
+  width: 100%;
+  -webkit-filter: none;
+  -webkit-transition: none;
 }
 
 /*----------------------------------------------------------------------------------------------------------*/
