@@ -9,7 +9,24 @@
   float: left;
   padding: 30px;
 }
-.hobbies {
+
+
+.hero {
+  background-color: #f2f2f2;
+}
+
+.list1{
+    float: left;
+    text-align: left;
+}
+
+.list2{
+    float: right;
+    padding-right: 50px;
+    text-align: left;
+}
+
+.hobbiesSection {
   display: block;
   border-radius: 15%;
   background-color: white;
@@ -19,73 +36,43 @@
   box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
   float: left;
   padding: 30px;
+  margin-left: 15px;
+}
+/*--------------------------------------------------------------------------------------------------------------*/
+
+.section-title {
+  margin: 0 0 15px 0;
+  padding: 0;
+  font-size: 2.250em;
+  font-weight: 300;
+  color: #0f1025;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  letter-spacing: 0.1em;
 }
 
-.hero {
-  background-color: #f2f2f2;
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
 }
-
-.list1{
-    float: left;
-    padding-left: 20px;
-    padding-bottom: 20px;
-    text-align: left;
+.line {
+  display: block;
+  width: 290px;
+  height: 3px;
+  padding: 0 !important;
+  background: #ccc;
 }
-
-.list2{
-    float: right;
-    padding-right: 20px;
-    text-align: left;
+.col-1 {
+  width: 33.33333333333333%;
+  float: left;
+  padding: 15px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
-
-#img1 {
-  height: 300px;
-  width: 220px;
-  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
-  float: center;
-  border-radius: 5%;
-}
-#img2 {
-  height: 300px;
-  width: 200px;
-  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
-  float: center;
-  border-radius: 5%;
-}
-
-#img3 {
-  height: 300px;
-  width: 200px;
-  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
-  float: center;
-  //border-radius: 15%;
-  padding: 5px;
-}
-#img4 {
-  height: 300px;
-  width: 175px;
-  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
-  float: center;
-  //border-radius: 15%;
-  padding: 5px;
-}
-
-.imgRow {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-.imgColumn {
-  flex: 50%;
-  padding: 0 4px;
-}
-
-.imgColumn img {
-  margin-top: 8px;
-  vertical-align: middle;
-}
-
-.imgContainer{
-    float: right;
+.column-full{
+    width: 100%;
+    margin: 30px;
 }
