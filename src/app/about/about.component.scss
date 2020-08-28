@@ -1,99 +1,22 @@
-
-/* .my-background {
-  display: block;
-  border-radius: 15%;
-  background-color: white;
-  text-align: center;
-  transition: 0.5s;
-  transform: translate(0,0px);
-  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
-  float: left;
-  padding: 30px;
-}
-
-
-.hero {
-  background-color: #f2f2f2;
-}
-
-.list1{
-    float: left;
-    text-align: left;
-}
-
-.list2{
-    float: right;
-    padding-right: 50px;
-    text-align: left;
-}
-
-.hobbiesSection {
-  display: block;
-  border-radius: 15%;
-  background-color: white;
-  text-align: center;
-  transition: 0.5s;
-  transform: translate(0,0px);
-  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
-  float: left;
-  padding: 30px;
-  margin-left: 15px;
-}*/
-/*--------------------------------------------------------------------------------------------------------------*/
-/*.section-title {
-  margin: 0 0 15px 0;
-  padding: 0;
-  font-size: 2.250em;
-  font-weight: 300;
-  color: #0f1025;
-  text-transform: uppercase;
-  display: block;
-  text-align: center;
-  letter-spacing: 0.1em;
-}
-
-.centered {
-  margin-left: auto;
-  margin-right: auto;
-  float: none;
-}
-.line {
-  display: block;
-  width: 240px;
-  height: 3px;
-  padding: 0 !important;
-  background: #ccc;
-}
-.col-1 {
-  width: 33.33333333333333%;
-  float: left;
-  padding: 15px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+* {
   box-sizing: border-box;
 }
-.column-full{
-    width: 100%;
-    margin: 30px;
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  padding-top: 25px;
 }
-#hobbies{
+.imgcolumn{
     text-align: center;
 }
-.row{
-    width: 100%;
-}
-
-.section-content{
-    margin-top:30px;
-}*/
-
-/*--------------------------------------------------------------------------------------------------------------*/
-*{
-    margin: 0;
-    padding: 0;
-}
-.wrapper{
-    width: 100%;
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 .section-title {
   margin: 0 0 15px 0;
@@ -106,6 +29,7 @@
   text-align: center;
   letter-spacing: 0.1em;
 }
+
 .centered {
   margin-left: auto;
   margin-right: auto;
@@ -119,25 +43,15 @@
   padding: 0 !important;
   background: #ccc;
 }
-.col-1 {
-  float: left;
-  padding: 15px;
- // width: 33.33%;
-}
-.row {
-  width: 100%;
-}
-.section-content {
-  padding: 20px;
+
+.list1{
+    float: left;
+    margin-right: 50px;
 }
 
-.list1 {
-  float: left;
-  text-align: left;
-}
-
-.list2 {
-  float: right;
-  padding-right: 50px;
-  text-align: left;
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
