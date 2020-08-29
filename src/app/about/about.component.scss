@@ -28,6 +28,7 @@
   display: block;
   text-align: center;
   letter-spacing: 0.1em;
+  margin-top: 25px;
 }
 
 .centered {
@@ -46,13 +47,26 @@
 
 .list1{
     float: left;
-    margin-right: 50px;
+    margin-right: 100px;
+    margin-left: 20px;
+    text-align: left;
+}
+.list2{
+    text-align: left;
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .column {
     width: 100%;
     text-align: center;
+  }
+  .list1{
+      text-align: center;
+      width: 100%;
+  }
+  .list2{
+      text-align: center;
+      width: 100%;
   }
 }

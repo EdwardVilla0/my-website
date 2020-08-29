@@ -1,21 +1,15 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#"></a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
+    <div class="topnav" id="myTopnav">
       <ul class="nav navbar-nav">
-        <li><a routerLink="/">Home</a></li>
-        <li><a routerLink="/about">About</a></li>
-        <li><a href="../../assets/Resume.pdf" target="popup">Resume</a></li>
-        <li><a routerLink="/contact">Contact</a></li>
+        <a routerLink="/">Home</a>
+        <a routerLink="/about">About</a>
+        <a href="../../assets/Resume.pdf" target="popup">Resume</a>
+        <a routerLink="/contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" (click)="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </ul>
     </div>
   </div>
 </nav>
-

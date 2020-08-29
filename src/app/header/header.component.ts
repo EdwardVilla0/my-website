@@ -12,7 +12,7 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
   page: number = 1;
   pdfSrc: string = '';
-
+  x;
 
   constructor() { }
 
@@ -32,5 +32,14 @@ export class HeaderComponent implements OnInit {
       reader.readAsArrayBuffer(img.files[0])
     }
   }
+
+  myFunction() {
+    this.x = document.getElementById("myTopnav");
+    if (this.x.className === "topnav") {
+      this.x.className += " responsive";
+    } else {
+      this.x.className = "topnav";
+    }
+   }
 
 }
