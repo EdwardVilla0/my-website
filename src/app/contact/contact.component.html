@@ -1,10 +1,10 @@
-<section class="section">
+<!--<section class="section">
   <div class="container">
-    <h1 class="title">Contact me</h1>
+    <h1 class="title">Contact me</h1>-->
     <!-- CONTACT FORM-->
-    <form (ngSubmit)="submitForm()" #contactForm="ngForm">
+    <!--<form (ngSubmit)="submitForm()" #contactForm="ngForm">-->
       <!--contact name-->
-      <div class="field">
+      <!--<div class="field">
         <label>Name</label>
         <br />
         <input type="text"
@@ -17,9 +17,9 @@
         <div class="help is-error" *ngIf="nameInput.invalid && nameInput.touched">
           Your name is required
         </div>
-      </div>
+      </div>-->
       <!--contact email-->
-      <div class="field">
+      <!--<div class="field">
         <label>Email</label>
         <br />
         <input type="email"
@@ -33,9 +33,9 @@
         <div class="help is-error" *ngIf="emailInput.invalid && emailInput.touched">
           Your valid email is required
         </div>
-      </div>
+      </div>-->
       <!--contact message-->
-      <div class="field">
+      <!--<div class="field">
         <label>Message</label>
         <br />
         <textarea name="message"
@@ -53,7 +53,19 @@
               [disabled]="contactForm.invalid">
         Send
       </button>
+     <a href="mailto:eduardovillasenor1992@gmail.com" target="_blank" rel="nofollow noopener noreferrer" class="contact__StyledEmailLink-sc-1m8df4t-3 gLSuQO">Say Hello</a>
     </form>
 
   </div>
-</section>
+</section>-->
+
+<div class="container">
+  <h1>Get In Touch</h1>
+  <p>
+    I am looking for opportunities to expand <br />
+    my knowledge with a team. If you have any <br />
+    questions or would just like to a chat, feel<br />
+    free to email mail me.<br />
+  </p>
+  <a href="mailto:eduardovillasenor1992@gmail.com" target="_blank" rel="nofollow noopener noreferrer" class="contact-hello">Say Hello</a>
+</div>
