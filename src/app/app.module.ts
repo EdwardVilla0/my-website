@@ -23,6 +23,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { AlertComponent } from './shared/alert/alert.component';
+import { ExperienceComponent } from './experience/experience.component';
 
 
 
@@ -34,7 +35,8 @@ import { AlertComponent } from './shared/alert/alert.component';
     AboutComponent,
     ContactComponent,
     HomeComponent,
-    AlertComponent
+    AlertComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,
