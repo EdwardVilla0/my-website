@@ -3,7 +3,7 @@
 
 .button {
   width: 100px;
-  height: 100px;
+  height: 50px;
   background: #f3f0f1;
   position: relative;
   background: #f3f0f1;
@@ -16,13 +16,13 @@
   margin-right: auto;
 
   span {
-    line-height: 100px;
+    line-height: 50px;
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
     font-weight: semibold;
   }
 
-  &:nth-child(1) {
+  &:nth-child(3) {
     box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
     color: #6f6cde;
 
