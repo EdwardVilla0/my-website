@@ -8,19 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class ContactComponent implements OnInit {
-  name: string;
-  email: string;
-  message: string;
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
-  submitForm() {
-    const message = 'testing ' + this.name;
-    alert(message);
-    
+  onClick() {
+    console.log(window.location.href)
+    window.location.href = "mailto:eduardovillasenor1992@gmail.com"
   }
-
+ 
 }
