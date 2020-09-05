@@ -1,4 +1,18 @@
-.dpgzhE {
+button {
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: -internal-light-dark(buttontext, rgb(170, 170, 170));
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  text-align: center;
+  cursor: default;
+  font: 400 13.3333px Arial;
+}
+
+.list1 {
   text-decoration: none;
   text-decoration-skip-ink: auto;
   position: relative;
@@ -17,4 +31,11 @@
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
   font-size: 13px;
   color: rgb(136, 146, 176);
+}
+ul {
+  list-style-type: disc;
+  float: left;
+}
+li {
+  text-align: -webkit-match-parent;
 }
